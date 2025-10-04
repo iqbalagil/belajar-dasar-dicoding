@@ -34,6 +34,7 @@ header.nav-container .nav-list ul {
     padding-left: 0;
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 2rem 1rem;
 }
@@ -128,6 +129,35 @@ main .content .content-image img {
     margin: auto;
 }
 
+main aside{
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+}
+
+main aside .social-media{
+    height: 100%;
+    display: flex;
+}
+
+main aside .social-media ul {
+    padding: 1.5rem 1rem;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin: auto;
+    background-color: #2d3e50;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+main aside .social-media li{
+    list-style-type: none;
+}
+
 main aside .social-media li a {
     text-decoration: none;
     font-size: 1.5rem;
@@ -140,3 +170,35 @@ main aside .social-media li a:hover {
     color: #89b0d9;
 }
 
+@media screen and (max-width: 768px) {
+    header.nav-container {
+        flex-direction: column;
+    }
+}
+
+header .nav-container .nav-list ul {
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+}
+
+
+main .content {
+    flex-direction: column;
+    gap: 2rem;
+}
+
+main{
+    padding: 1rem 3rem;
+}
+
+main .content .content-description .title{
+    font-size: 3rem;
+}
+
+main .content .content-description p {
+    font-size: 1rem;
+}
+
+main .content .content-image{
+    order: -1;
+}
