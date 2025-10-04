@@ -1,10 +1,10 @@
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Quicksand', sans-serif;
     height: 100dvh;
     margin: 0;
@@ -13,7 +13,7 @@ body{
     flex-direction: column;
 }
 
-header.nav-container{
+header.nav-container {
     width: 100%;
     max-width: 1200px;
     padding-block: 1rem;
@@ -26,11 +26,11 @@ header.nav-container{
     z-index: 99999;
 }
 
-header.nav-container .logo img{
+header.nav-container .logo img {
     width: 150px;
 }
 
-header.nav-container .nav-list ul{
+header.nav-container .nav-list ul {
     padding-left: 0;
 
     display: flex;
@@ -38,11 +38,11 @@ header.nav-container .nav-list ul{
     gap: 2rem 1rem;
 }
 
-header.nav-container .nav-list li{
+header.nav-container .nav-list li {
     list-style-type: none;
 }
 
-header.nav-container .nav-list li a{
+header.nav-container .nav-list li a {
     padding: 0.5rem 1.5rem;
     border-radius: 999px;
 
@@ -51,10 +51,92 @@ header.nav-container .nav-list li a{
     font-weight: 500;
     color: black;
 
-    transition:  all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 header.nav-container .nav-list li:hover a {
     background-color: #425c77;
     color: white;
 }
+
+main {
+    flex: 1;
+
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-block: 2rem 4rem;
+
+    display: flex;
+    align-items: center;
+}
+
+main .content {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+}
+
+main .content .content-description {
+    flex: 1 1;
+}
+
+main .content .content-description .title {
+    margin-block: 1rem;
+
+    font-size: 3.5rem;
+}
+
+main .content .content-description p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+
+main .content .content-description button {
+    padding: 0.8rem 2.5rem;
+    border: 3px solid transparent;
+    border-radius: 999px;
+    margin-block-start: 1rem;
+
+    background-color: #2d3e50;
+
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+
+main .content .content-description button:hover {
+    border: 3px solid #2d3e50;
+    background-color: transparent;
+    color: #2d3e50;
+}
+
+main .content .content-image {
+    flex: 1;
+    display: flex;
+}
+
+main .content .content-image img {
+    width: 300px;
+    min-width: 250px;
+    margin: auto;
+}
+
+main aside .social-media li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+
+    transition: all 0.1s ease-in-out;
+}
+
+main aside .social-media li a:hover {
+    color: #89b0d9;
+}
+
